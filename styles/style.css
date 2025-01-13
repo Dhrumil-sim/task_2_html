@@ -4,21 +4,35 @@
 }
 .nav-bar{
     background-color: #047BD5;
-    display: flex;
+    display: flex;  
     align-items: center;
     height: 100px;
     
 }
 .nav-bar .logo {
-    margin-left: 30%;
+    margin-left: 20%;
 }
-.nav-bar .search-box{
+.search-container {
+    position: relative;
     width: 30%;
-    height: 40%;
-    border-radius: 5px;
+    margin-left: 3%;
+}
+.nav-bar .search-box {
+    width: 100%; /* Make the search box take the full width of the container */
+    height: 40px; /* Set the height of the input box */
+    border-radius: 5px; 
     padding: 5px 10px;
-    margin-left: 2%;
- 
+    font-size: 16px;
+    border: none;
+    padding-right: 40px; /* Add some padding to the right to make space for the icon */
+}
+.search-icon {
+    position: absolute;
+    right: 10px; /* Position the icon 10px from the right edge of the input */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the icon */
+    font-size: 20px; /* Icon size */
+    color: #047BD5; /* Icon color (same as the nav-bar color) */
 }
 .nav-bar .rightmenu{
        display: flex;
@@ -33,6 +47,7 @@
     color: #047BD5;
     width: 100px;
     height: 40px;
+    cursor: pointer;
 }
 .rightmenu button{
     padding: 10px;
