@@ -118,3 +118,13 @@ body{
     height: 50px;
     border-radius: 5px;
 }
+
+
+.DealsOfTheDay .products-card {
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    gap: 30px;
+    overflow-x: auto;
+    
+}
