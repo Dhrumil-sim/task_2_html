@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #FAF9F6;
+}
 .nav-bar{
     background-color: #047BD5;
     display: flex;  
@@ -66,7 +69,7 @@
 
 
 .category{
-    background-color: azure;
+    background-color: white;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -80,8 +83,6 @@
     align-items: center; /* Center content horizontally */
     text-align: center; /* Center text */
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
     width: 300px; /* Fixed width for consistency */
 }
 .cat-item img{
@@ -90,8 +91,7 @@
     border-radius: 8px;
 }
 .cat-item .category-name {
-    font-size: 4vw;
+    font-size: 1vw;
     font-weight: bold;
-    color: #047BD5; /* Change to your desired color */
-    margin-top: 10px; /* Space between the image and category name */
+    margin-top: 20px; /* Space between the image and category name */
 }
