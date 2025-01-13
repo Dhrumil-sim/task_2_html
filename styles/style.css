@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    background-color: #047BD5;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    
+}
+.nav-bar .logo {
+    margin-left: 30%;
+}
+.nav-bar .search-box{
+    width: 30%;
+    height: 40%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 2%;
+ 
+}
+.nav-bar .rightmenu{
+       display: flex;
+       margin-left: 4%;
+}
+.rightmenu .RM-I {
+    margin-left: 50px;  
+}
+.rightmenu .LoginButton{
+    background-color: white;
+    font-size: 14px;
+    color: #047BD5;
+    width: 100px;
+    height: 40px;
+}
+.rightmenu button{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
