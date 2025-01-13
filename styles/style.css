@@ -95,3 +95,26 @@ body{
     font-weight: bold;
     margin-top: 20px; /* Space between the image and category name */
 }
+.DealsOfTheDay{
+   margin-left: 80px; 
+   margin-right:80px;
+   border: 1px solid; 
+   margin-top: 30px;     
+}
+.DealsOfTheDay .header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.DealsOfTheDay .header .clock{
+    margin-left: 8px;
+}
+.DealsOfTheDay .header button{
+    margin-left: auto;
+    margin-right: 30px;
+    background-color: #047BD5;
+    color: white;
+    width:70px;
+    height: 50px;
+    border-radius: 5px;
+}
