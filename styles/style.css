@@ -33,7 +33,7 @@ body{
     height: 40px; /* Set the height of the input box */
     border-radius: 5px; 
     padding: 5px 10px;
-    font-size: 16px;
+    font-size: 1rem;
     border: none;
     padding-right: 40px; /* Add some padding to the right to make space for the icon */
 }
@@ -102,14 +102,18 @@ body{
     cursor: pointer;
 }
 .cat-item .category-name {
-    font-size: 1vw;
+    font-size: 2vw;
     font-weight: bold;
     margin-top: 20px; /* Space between the image and category name */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: block;
 }
 .DealsOfTheDay{
    margin-left: 80px; 
    margin-right:80px;
-   border: 1px solid; 
+   border: 1px solid #ccc; 
    margin-top: 30px;     
 }
 .DealsOfTheDay .header{
@@ -142,26 +146,48 @@ body{
     justify-content: center;
     gap: 30px;
     overflow-x: auto;
-    
+    margin-top: 10px;
+    padding: 10px 0;    
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }   
+.DealsOfTheDay .products-card::-webkit-scrollbar {
+    height: 8px;
+}
 .DealsOfTheDay .products-card .product{
     width: 150px;
     box-sizing: border-box;
     flex-shrink: 0;
     cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 180px;
+}
+.DealsOfTheDay .products-card .product img{
+    max-width: 100%;
 
 }
 .DealsOfTheDay .products-card .product .product-name{
-    margin-top: 3px;
+    margin-top: 3px ;
     width: 100%;
     text-overflow: ellipsis;
     overflow: hidden;
+    display: block;
 }
 .DealsOfTheDay .products-card .product .discount{
     color: green;
     margin-top: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .DealsOfTheDay .products-card .product .deemed-msg{
     color: #ccc;
     margin-top: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
