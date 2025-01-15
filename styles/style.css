@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
 }
+.poppins-light {
+    
+    font-weight: 300;
+    font-style: normal;
+  }
 body{
     background-color: #FAF9F6;
     font-family: "Poppins", serif;
-  font-weight: 100;
-  font-style: normal;
+    font-weight: 10px;
 }
 .nav-bar{
     background-color: #047BD5;
@@ -108,6 +112,7 @@ body{
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-left: 10px;
 }
 .DealsOfTheDay .header .clock{
     margin-left: 8px;
@@ -120,14 +125,27 @@ body{
     width:70px;
     height: 50px;
     border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
 .DealsOfTheDay .products-card {
     display: flex;
-    margin-top: 5px;
+    margin-top: 10px;
     justify-content: center;
     gap: 30px;
     overflow-x: auto;
     
+}
+.DealsOfTheDay .products-card .product .products-name{
+    margin-top: 3px;
+}
+.DealsOfTheDay .products-card .product .discount{
+    color: green;
+    margin-top: 3px;
+}
+.DealsOfTheDay .products-card .product .deemed-msg{
+    color: #ccc;
+    margin-top: 3px;
 }
