@@ -21,6 +21,7 @@ body{
 }
 .nav-bar .logo {
     margin-left: 20%;
+    cursor: pointer;
 }
 .search-container {
     position: relative;
@@ -43,6 +44,7 @@ body{
     transform: translateY(-50%); /* Vertically center the icon */
     font-size: 20px; /* Icon size */
     color: #047BD5; /* Icon color (same as the nav-bar color) */
+    cursor: pointer;
 }
 .nav-bar .rightmenu{
        display: flex;
@@ -91,11 +93,13 @@ body{
     text-align: center; /* Center text */
     padding: 10px;
     width: 300px; /* Fixed width for consistency */
+    
 }
 .cat-item img{
     max-width: 100%;
     height: 80px;
     border-radius: 8px;
+    cursor: pointer;
 }
 .cat-item .category-name {
     font-size: 1vw;
@@ -127,19 +131,31 @@ body{
     border-radius: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 
 .DealsOfTheDay .products-card {
     display: flex;
+    flex-wrap: wrap;    
     margin-top: 10px;
     justify-content: center;
     gap: 30px;
     overflow-x: auto;
     
+}   
+.DealsOfTheDay .products-card .product{
+    width: 150px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    cursor: pointer;
+
 }
-.DealsOfTheDay .products-card .product .products-name{
+.DealsOfTheDay .products-card .product .product-name{
     margin-top: 3px;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .DealsOfTheDay .products-card .product .discount{
     color: green;
