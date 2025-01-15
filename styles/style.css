@@ -22,6 +22,8 @@ body{
 .nav-bar .logo {
     margin-left: 20%;
     cursor: pointer;
+    width: 100px;
+    height: 70px;
 }
 .search-container {
     position: relative;
@@ -97,7 +99,7 @@ body{
 }
 .cat-item img{
     max-width: 100%;
-    height: 80px;
+    height: 130px;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -114,7 +116,8 @@ body{
    margin-left: 80px; 
    margin-right:80px;
    border: 1px solid #ccc; 
-   margin-top: 30px;     
+   margin-top: 30px;
+   margin-bottom: 30px;     
 }
 .DealsOfTheDay .header{
     display: flex;
@@ -190,4 +193,73 @@ body{
     margin-top: 3px;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+
+
+@media (max-width: 600px) {
+    .nav-bar{
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .nav-bar .logo{
+        margin-left: 0;
+        text-align: center;
+        width: 50%;
+        height: 50%;
+    }
+    .search-container{
+        width: 80%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .rightmenu{
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .rightmenu .RM-I {
+        margin-left: 10px;
+    }
+
+    .category {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .cat-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .DealsOfTheDay {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    .DealsOfTheDay .header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .DealsOfTheDay .header button {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .DealsOfTheDay .products-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .DealsOfTheDay .products-card .product {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
 }
