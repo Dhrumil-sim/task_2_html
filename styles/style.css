@@ -4,6 +4,9 @@
 }
 body{
     background-color: #FAF9F6;
+    font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
 }
 .nav-bar{
     background-color: #047BD5;
